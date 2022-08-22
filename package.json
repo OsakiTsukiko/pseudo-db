@@ -1,0 +1,11 @@
+{
+  "name": "pseudo-db",
+  "version": "0.0.1",
+  "description": "A small scale pseudo database",
+  "main": "main.js",
+  "scripts": {
+  },
+  "keywords": ["pseudo-db", "pseudo", "db", "database"],
+  "author": "OsakiTsukiko <osakitsukiko.mail@gmail.com>",
+  "license": "MIT"
+}
