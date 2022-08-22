@@ -1,6 +1,6 @@
 {
   "name": "simple-pseudo-db",
-  "version": "0.0.1",
+  "version": "0.1.4",
   "description": "A small scale pseudo database",
   "main": "main.js",
   "scripts": {
