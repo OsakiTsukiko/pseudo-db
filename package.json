@@ -1,11 +1,19 @@
 {
   "name": "simple-pseudo-db",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "A small scale pseudo database",
   "main": "main.js",
-  "scripts": {
+  "scripts": {},
+  "keywords": [
+    "pseudo-db",
+    "pseudo",
+    "db",
+    "database"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OsakiTsukiko/pseudo-db.git"
   },
-  "keywords": ["pseudo-db", "pseudo", "db", "database"],
   "author": "OsakiTsukiko <osakitsukiko.mail@gmail.com>",
   "license": "MIT"
 }

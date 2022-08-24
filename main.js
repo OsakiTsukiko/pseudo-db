@@ -4,6 +4,10 @@ const fs = require("fs");
 const crypto = require('crypto');
 
 class PDBConnection {
+    path = ".pseudo-db";
+    full_path = path.join(os.homedir(), this.path);
+    algorithm = "aes-256-ctr"; 
+    hash_algo = "sha256"; 
 
     init () {
         if (!fs.existsSync(this.full_path)) {
@@ -50,25 +54,17 @@ class PDBConnection {
     };
 
     constructor(username, password) {
-        this.path = ".pseudo-db";
-        this.full_path = path.join(os.homedir(), this.path);
         this.init();
-
-        this.algorithm = "aes-256-ctr"; 
-        this.hash_algo = "sha256"; 
 
         this.username = username;
         this.password = crypto.createHash(this.hash_algo).update(password).digest('base64').substr(0, 32);
         this.key = this.password
+        
         if (!this.auth()) {
             console.error("Incorrect login!");
             delete this;
         }
-        // this.key = Buffer.from(this.password, "utf-8");
-
-        // this.loaded = [];
-        // might implement this but not rn
-
+        
         // i should also add async stuff
     }
 
